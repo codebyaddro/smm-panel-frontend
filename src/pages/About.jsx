@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TopNav = () => {
+const About = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const TopNav = () => {
     );
 };
 
-export default TopNav;
+export default About;
