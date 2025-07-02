@@ -11,7 +11,7 @@ const TopNav = () => {
                 {/* logo */}
                 <div className="text-4xl font-bold">
                     <a href="/">MyShop</a>
-                </div>
+                </div> 
                 {/* navigation links */}
                 <nav className="space-x-6 text-lg font-">
                     <a href="/" className="text-gray-700 hover:text-blue-500">Home</a>

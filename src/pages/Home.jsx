@@ -4,18 +4,18 @@ const Home = () => {
   return (
     <div className='p-4 space-y-4 container mx-auto'>
       {/* Heading for top selling products */}
-      {/* <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <h2 className="text-3xl font-bold">Top Selling Products</h2>
           <div className='flex justify-between items-center gap-2'>
             <h2 className="">Shop All Deals  </h2> 
             <FontAwesomeIcon icon={faChevronRight} />
           </div>
-      </div> */}
+      </div>
 
       {/* product card */}
       
 
-{/* <div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+<div class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
         <img class="p-8 rounded-t-lg" src="/docs/images/products/apple-watch.png" alt="product image" />
     </a>
@@ -49,7 +49,7 @@ const Home = () => {
         </div>
     </div>
 </div>
- */}    {/* HERO SECTION */}
+    {/* HERO SECTION */}
         <section className='max-w-11/12 mx-auto my-8'>
         {/* left side */}
           <div>
