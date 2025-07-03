@@ -41,7 +41,7 @@ export default function LibgramHero() {
           {/* Right Content - Hero Image */}
           <div className="w-1/2 relative flex items-center justify-center">
             <img 
-              src="../assets/images/hero-image-1.jpg" 
+              src="../../images/hero-image-1.jpg" 
               alt="Hero"
               className="w-full h-auto max-w-md rounded-lg shadow-lg"
             />
