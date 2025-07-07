@@ -2,6 +2,7 @@ import React from 'react';
 import { Search, Heart, Hash, Star , Calendar, User , Rocket, ThumbsUp, Headphones} from 'lucide-react';
 import SocialMediaGrowthSlider from '../components/SocialMediaGrowthSlider';
 import Faqs from '../components/Faqs';
+import TopSellingProducts from '../components/TopSellingProducts';
 
 export default function LibgramHero() {
   return (
@@ -49,6 +50,7 @@ export default function LibgramHero() {
         </div>
       </div>
     </div>
+    <TopSellingProducts/>
     <div className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Top Section with Testimonials and Main Content */}

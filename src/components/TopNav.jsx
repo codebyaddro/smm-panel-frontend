@@ -1,81 +1,137 @@
-import React, { useState } from 'react';
-import { ChevronDown, MoreHorizontal , LogIn} from 'lucide-react';
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  PhoneOutgoing,
+  Search,
+  ShoppingCart,
+  Twitter,
+  User,
+  User2,
+} from "lucide-react";
 
-export default function LibgramNavbar() {
-  const [activeDropdown, setActiveDropdown] = useState(null);
-
-  const toggleDropdown = (dropdown) => {
-    setActiveDropdown(activeDropdown === dropdown ? null : dropdown);
-  };
-
-  const navItems = [
-    { name: 'Instagram', hasDropdown: true },
-    { name: 'Youtube', hasDropdown: true },
-    { name: 'TikTok', hasDropdown: true },
-    { name: 'Telegram', hasDropdown: true },
-    { name: 'Twitter', hasDropdown: true },
-  ];
-
+const TopNav = () => {
   return (
-    <nav className="bg-white border-b border-gray-200 px-4 py-3">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
-        {/* Logo */}
-        <div className="flex items-center">
-          <span className="text-xl font-semibold text-gray-900">SMM</span>
-        </div>
-
-        {/* Navigation Items */}
-        <div className="flex items-center space-x-6">
-          {navItems.map((item) => (
-            <div key={item.name} className="relative">
-              <button
-                onClick={() => toggleDropdown(item.name)}
-                className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 transition-colors duration-200"
-              >
-                <span className="text-sm font-medium">{item.name}</span>
-                {item.hasDropdown && (
-                  <ChevronDown 
-                    size={16} 
-                    className={`transform transition-transform duration-200 ${
-                      activeDropdown === item.name ? 'rotate-180' : ''
-                    }`}
-                  />
-                )}
-              </button>
-              
-              {/* Dropdown Menu */}
-              {item.hasDropdown && activeDropdown === item.name && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
-                  <div className="py-1">
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Option 1
-                    </a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Option 2
-                    </a>
-                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                      Option 3
-                    </a>
-                  </div>
-                </div>
-              )}
+    <>
+      <header>
+        <nav>
+          {/* hotline and social media section */}
+          <section className="max-w-7xl mx-auto flex items-center justify-between p-2 shadow-md">
+            {/* hotline */}
+            <div className="flex items-center justify-start gap-2 ">
+              <PhoneOutgoing />
+              <p className="text-lg font-poppins">
+                Hotline:{" "}
+                <span className="text-blue-700">
+                  +88012345678, +880123456789
+                </span>{" "}
+                <span className="text-blue-500 font-medium">(10AM - 10PM)</span>
+              </p>
             </div>
-          ))}
-          
-          {/* More button */}
-          <button className="text-gray-700 hover:text-gray-900 transition-colors duration-200">
-            <MoreHorizontal size={20} />
-          </button>
-        </div>
-
-        {/* Login */}
-        <div className="flex items-center justify-center space-x-2">
-          <button className="text-lg font-medium text-black hover:text-gray-900 transition-colors duration-200">
-            Log in 
-          </button>
-          <LogIn/>
-        </div>
-      </div>
-    </nav>
+            {/* social media */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800"
+              >
+                <Facebook />
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:text-blue-600"
+              >
+                <Twitter />
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-pink-600 hover:text-pink-800"
+              >
+                <Instagram />
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-700 hover:text-blue-900"
+              >
+                <Linkedin />
+              </a>
+              <a
+                href="#"
+                className="flex items-center justify-center text-gray-600 hover:text-blue-500"
+              >
+                <User />
+                <h2>LOGIN OR RESISTER</h2>
+              </a>
+            </div>
+          </section>
+          {/* logo and search bar  */}
+          <section className="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="flex items-center justify-between p-4">
+              <img
+                src="./images/Grow-authentic-png.png"
+                alt="website logo"
+                className="w-32 h-32"/>
+            </div>
+            <div>
+                <form class=" flex items-center justify-center">
+                  <select
+                    id="categoried"
+                    class="bg-gray-50  text-white text-md rounded-tl-lg rounded-bl-lg w-full p-2.5 dark:bg-gray-700 ">
+                    <option selected>All Categories</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                  </select>
+                  <div class="flex">
+                    <input
+                      type="search"
+                      id=""
+                      class=" text-md  text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none"
+                      placeholder="Search for products, brands and more"
+                      required
+                    />
+                    <button type="submit" class="p-2.5  text-md  font-medium text-white bg-blue-700 rounded-tr-lg rounded-br-lg ">
+                      <Search/>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            <div className="flex items-center justify-center p-4 gap-3 font-poppins">
+              <User2/>
+              <ShoppingCart/>
+              <div>
+                <p>Shopping Cart</p>
+              <p className="text-red-600">$00.00</p>
+              </div>
+            </div>
+          </section>
+         {/* navlinks */}
+          <section className="max-w-7xl mx-auto flex items-center justify-between bg-blue-800 px-4 py-3 text-white font-poppins ">
+            <ul className="flex items-center gap-6 text-md px">
+              <li className="hover:text-blue-500"><a href="#">Home</a></li>
+              <li className="hover:text-blue-500"><a href="#">All Products</a></li>
+              <li className="hover:text-blue-500"><a href="#">Windows</a></li>
+              <li className="hover:text-blue-500"><a href="#">Office</a></li>
+              <li className="hover:text-blue-500"><a href="#">Software</a></li>
+              <li className="hover:text-blue-500"><a href="#">Windows Server</a></li>
+              <li className="hover:text-blue-500"><a href="#">Subscription</a></li>
+              <li className="hover:text-blue-500"><a href="#">Antivirus</a></li>
+              <li className="hover:text-blue-500"><a href="#">VPN</a></li>
+            </ul>
+          </section>
+         
+        </nav>
+      </header>
+    </>
   );
-}
+};
+
+export default TopNav;
