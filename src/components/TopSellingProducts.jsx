@@ -21,7 +21,7 @@ const TopSellingProducts = () => {
         <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
           <div className="relative h-64 p-6 flex flex-col justify-between text-white overflow-hidden">
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-red-900 bg-opacity-80"><img src="../../public/images/smm_panel.png" alt="" /></div>
+            <div className="absolute inset-0 bg-red-900 bg-opacity-80"><img src="./images/smm_panel.png" alt="" /></div>
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full transform translate-x-8 -translate-y-8 group-hover:scale-110 transition-transform duration-500"></div>

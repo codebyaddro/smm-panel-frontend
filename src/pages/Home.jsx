@@ -3,10 +3,12 @@ import { Search, Heart, Hash, Star , Calendar, User , Rocket, ThumbsUp, Headphon
 import SocialMediaGrowthSlider from '../components/SocialMediaGrowthSlider';
 import Faqs from '../components/Faqs';
 import TopSellingProducts from '../components/TopSellingProducts';
+import AutoCarousel from '../components/AutoCarousel';
 
 export default function LibgramHero() {
   return (
     <div>
+      <AutoCarousel/>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
@@ -42,7 +44,7 @@ export default function LibgramHero() {
           {/* Right Content - Hero Image */}
           <div className="w-1/2 relative flex items-center justify-center">
             <img 
-              src="../../images/hero-image-1.jpg" 
+              src="./images/hero-image-1.jpg" 
               alt="Hero"
               className="w-full h-auto max-w-md rounded-lg shadow-lg"
             />
@@ -50,6 +52,7 @@ export default function LibgramHero() {
         </div>
       </div>
     </div>
+
     <TopSellingProducts/>
     <div className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-4">
