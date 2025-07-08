@@ -3,6 +3,7 @@ import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import AllProducts from "../pages/AllProducts";
+import SMMPanel from "../pages/SMMPanel";
 
 
 
@@ -22,6 +23,10 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/AllProducts",
             element: <AllProducts/>
+         },
+         {
+            path: "/SMMPanel",
+            element: <SMMPanel />
          }
     ]
 

@@ -10,5 +10,11 @@
     --color-green-paste-green: #C2FFD9;
     --color-light-purple: #B8B9FD;
     --color-light-red: #FFE5D4;
+    --color-dark-bg: #1E1823;
+    --color-dark-card: #362C3F;
+    --color-card-border:#514959;
+    
+
+
     --font-poppins: Poppins, "sans-serif";  
 }
