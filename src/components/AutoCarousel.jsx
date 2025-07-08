@@ -20,9 +20,8 @@ const AutoCarousel = () => {
         <div className="">
           <img className='' src="./images/Grow Authentic Websiute.jpg" alt="" />
         </div>
-        <div className="p-4 bg-green-200 text-center">
-          <h3 className="text-xl font-bold">Slide 2</h3>
-          <p>This is the second slide content.</p>
+        <div className="">
+          <img src="./images/Grow Authentic Websiute 01.jpg" alt="" />
         </div>
         <div className="p-4 bg-yellow-200 text-center">
           <h3 className="text-xl font-bold">Slide 3</h3>

@@ -22,7 +22,7 @@ const TopNav = () => {
               {/* hotline */}
               <div className="flex items-center justify-start gap-2 ">
                 <PhoneOutgoing className="text-gray-800" />
-                <p className="text-lg font-poppins text-gray-800">
+                <p className="text-md font-poppins text-gray-800">
                   Hotline:{" "}
                   <span className="text-blue-700">
                     +88012345678, +880123456789
@@ -92,16 +92,16 @@ const TopNav = () => {
                   class="bg-gray-50  text-white text-md rounded-tl-lg rounded-bl-lg w-full p-2.5 dark:bg-gray-700 "
                 >
                   <option selected>All Categories</option>
-                  <option value="US">United States</option>
-                  <option value="CA">Canada</option>
-                  <option value="FR">France</option>
-                  <option value="DE">Germany</option>
+                  <option value="Software">Software</option>
+                  <option value="Antivirus">Antivirus</option>
+                  <option value="Office">Office</option>
+                  <option value="Windows">Windows</option>
                 </select>
                 <div class="flex">
                   <input
                     type="search"
                     id=""
-                    class=" text-md  text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none"
+                    class=" lg:w-xl text-md  text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none placeholder:text-center"
                     placeholder="Search for products, brands and more"
                     required
                   />

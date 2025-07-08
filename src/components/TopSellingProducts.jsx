@@ -45,10 +45,10 @@ const TopSellingProducts = () => {
           </div>
 
           {/* Hover Button */}
-          <div className=" duration-300 ">
-            <button className="w-full  bg-white text-blue-600 font-semibold py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-200">
+          <div className="">
+            <NavLink to="/SMMPanel" className="w-full  flex justify-center bg-white text-blue-600 font-semibold py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-200">
               Log In
-            </button>
+            </NavLink>
           </div>
         </div>
 
