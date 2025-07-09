@@ -5,6 +5,7 @@ import About from "../pages/About";
 import AllProducts from "../pages/AllProducts";
 import SMMPanel from "../pages/SMMPanel";
 import LogIn from "../auth/LogIn";
+import SignUp from "../auth/SignUp";
 
 
 
@@ -32,6 +33,10 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/login",
             element: <LogIn />
+         },
+         {
+            path: "/signup",
+            element: <SignUp/>
          }
     ]
 

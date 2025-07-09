@@ -1,6 +1,7 @@
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faAt, faKey } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { NavLink } from "react-router";
 
 
 const LogIn = () => {
@@ -57,10 +58,10 @@ const LogIn = () => {
                             Don't have an account?
                         </h2>
                     
-                        <button
-                         className="w-full border border-purple-600 p-2 py-3 text-lg mt-3 rounded text-white hover:bg-purple-600 transition-colors">
+                        <NavLink to="/signup"
+                         className="w-full flex justify-center items-center border border-purple-600 p-2 py-3 text-lg mt-3 rounded text-white hover:bg-purple-600 transition-colors">
                             Sign Up
-                        </button>
+                        </NavLink>
                    </div>
                 </div>
             </section>
