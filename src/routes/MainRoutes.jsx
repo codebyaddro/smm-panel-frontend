@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import AllProducts from "../pages/AllProducts";
 import SMMPanel from "../pages/SMMPanel";
+import LogIn from "../auth/LogIn";
 
 
 
@@ -27,6 +28,10 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/SMMPanel",
             element: <SMMPanel />
+         },
+         {
+            path: "/login",
+            element: <LogIn />
          }
     ]
 
