@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'; // Import
 
 function BottomNav () {
   return (
-    <footer className="bg-[#1a1c20] text-gray-400 py-8 px-4 sm:px-6 lg:px-8 mt-20">
+    <footer className="bg-[#1a1c20] text-gray-400 py-8 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         {/* Top section of the footer */}
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-gray-700 pb-6 mb-6">

@@ -15,13 +15,13 @@ const AutoCarousel = () => {
   };
 
   return (
-    <div className="w-full pb-6">
+    <div className="w-full bg-gradient-to-r from-fuchsia-600 to-violet-500">
       <Slider {...settings}>
         <div className="">
-          <img className='' src="./images/Grow Authentic Websiute.jpg" alt="" />
+          <img className='h-[70%] w-[80%] mx-auto' src="./images/Grow Authentic Websiute.jpg" alt="" />
         </div>
         <div className="">
-          <img src="./images/Grow Authentic Websiute 01.jpg" alt="" />
+          <img src="./images/Grow Authentic Websiute 01.jpg" alt="" className='h-[70%] w-[80%] mx-auto' />
         </div>
         <div className="p-4 bg-yellow-200 text-center">
           <h3 className="text-xl font-bold">Slide 3</h3>

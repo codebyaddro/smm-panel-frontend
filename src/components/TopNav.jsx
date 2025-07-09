@@ -1,3 +1,6 @@
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Facebook,
   Instagram,
@@ -9,6 +12,7 @@ import {
   User,
   User2,
 } from "lucide-react";
+import { NavLink } from "react-router";
 import { Link } from "react-router";
 
 const TopNav = () => {
@@ -40,7 +44,7 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 border-r-1 border-gray-300 pr-2"
                 >
-                  <Facebook />
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
                 <a
                   href="https://www.twitter.com"
@@ -48,7 +52,7 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-600 border-r-1 border-gray-300 pr-2"
                 >
-                  <Twitter />
+                  <FontAwesomeIcon icon={faTwitter} />
                 </a>
                 <a
                   href="https://www.instagram.com"
@@ -56,7 +60,7 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-pink-600 hover:text-pink-800 border-r-1 border-gray-300 pr-2"
                 >
-                  <Instagram />
+                  <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <a
                   href="https://www.linkedin.com"
@@ -64,14 +68,14 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-blue-700 hover:text-blue-900 border-r-1 border-gray-300 pr-2"
                 >
-                  <Linkedin />
+                  <FontAwesomeIcon icon={faLinkedin} />
                 </a>
                 <a
                   href="#"
                   className="flex items-center justify-center text-gray-600 hover:text-blue-500"
                 >
                   <User />
-                  <h2>LOGIN OR RESISTER</h2>
+                  <NavLink to="/signup">LOGIN OR RESISTER</NavLink>
                 </a>
               </div>
             </div>
@@ -109,7 +113,7 @@ const TopNav = () => {
                     type="submit"
                     class="p-2.5  text-md  font-medium text-white bg-blue-700 rounded-tr-lg rounded-br-lg "
                   >
-                    <Search />
+                    <FontAwesomeIcon icon={faSearch} />
                   </button>
                 </div>
               </form>
@@ -158,7 +162,12 @@ const TopNav = () => {
               <div>
                 <ul>
                   <li>
-                    <a href="">Log in to SMM Panel</a>
+                    <NavLink
+                      to="/SMMPanel"
+                      className="bg-gradient-to-r from-fuchsia-600 to-violet-500 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
+                    >
+                      Log in to SMM Panel
+                    </NavLink>
                   </li>
                 </ul>
               </div>

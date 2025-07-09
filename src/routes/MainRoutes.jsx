@@ -6,6 +6,7 @@ import AllProducts from "../pages/AllProducts";
 import SMMPanel from "../pages/SMMPanel";
 import LogIn from "../auth/LogIn";
 import SignUp from "../auth/SignUp";
+import SingleProduct from "../pages/SingleProduct";
 
 
 
@@ -37,6 +38,10 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/signup",
             element: <SignUp/>
+         },
+         {
+            path: "/SingleProduct",
+            element: <SingleProduct />
          }
     ]
 

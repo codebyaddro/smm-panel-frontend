@@ -102,9 +102,9 @@ const TopSellingProducts = () => {
 
           {/* Hover Button */}
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-            <button className="w-full bg-white text-blue-600 font-semibold py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-200 transform translate-y-4 group-hover:translate-y-0">
+            <NavLink to="/SingleProduct" className="w-full flex justify-center items-center bg-white text-blue-600 font-semibold py-2 px-4 rounded-lg hover:bg-blue-50 transition-colors duration-200 transform translate-y-4 group-hover:translate-y-0">
               View Details
-            </button>
+            </NavLink>
           </div>
         </div>
         {/* Product Card 2 - Windows 10 */}
