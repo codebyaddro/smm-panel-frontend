@@ -115,7 +115,7 @@ const SMMPanel = () => {
           </div>
         </div>
         {/* social media icons for smm */}
-        <div className="bg-dark-bg max-w-7xl mx-auto rounded-lg mt-6">
+        <div className="bg-gradient-to-r from-fuchsia-400 to-purple-700 max-w-7xl mx-auto rounded-lg mt-6">
           <ul className="flex items-center justify-between text-white py-4 px-6">
             <li>
               <a href="#">

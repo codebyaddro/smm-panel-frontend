@@ -2,13 +2,10 @@ import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/fre
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  Facebook,
-  Instagram,
-  Linkedin,
+ 
   PhoneOutgoing,
   Search,
   ShoppingCart,
-  Twitter,
   User,
   User2,
 } from "lucide-react";

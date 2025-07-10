@@ -1,9 +1,14 @@
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 import { faAt, faKey, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import { NavLink } from "react-router";
 
 const SignUp = () => {
+     const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
     return (
         <div className='min-h-screen bg-main-bg text-white p-3 md:p-8 font-poppins flex items-center justify-center'>
             <section className="max-w-xl w-full h-auto mx-auto bg-dark-bg p-10 rounded-lg shadow-md">
@@ -22,19 +27,11 @@ const SignUp = () => {
                    <div>
                         <form className="flex flex-col gap-4 mt-4">
                             <div className="">
-                                <div className="flex items-center gap-3 bg-dark-card p-3 rounded text-white border border-card-border">
-                                    <FontAwesomeIcon icon={faUser} />
-                                <input
-                                    type="text"
-                                    placeholder="Enter your First name"
-                                    className=""
-                                    required
-                                />
-                                </div>
+                                
                                 <div className="flex items-center mt-3 gap-3 bg-dark-card p-3 rounded text-white border border-card-border">
                                     <FontAwesomeIcon icon={faUser} />
                                     <input type="text"
-                                    placeholder="Enter your Last name" 
+                                    placeholder="Enter Your Name" 
                                     
                                     required
                                     />
@@ -50,15 +47,41 @@ const SignUp = () => {
                                 required
                             />
                            </div>
-                            <div className="flex items-center gap-2 bg-dark-card p-2 rounded text-white border border-card-border">
-                                <FontAwesomeIcon icon={faKey} className="text-white" />
-                                <input
-                                type="password"
-                                placeholder="Password"
-                                className="w-full bg-dark-card p-2 rounded text-white border-none"
-                                required
-                            />
-                            </div>
+                         <div className="space-y-4">
+            <div className="flex items-center gap-2 bg-dark-card p-2 rounded text-white border border-card-border">
+                <FontAwesomeIcon icon={faKey} className="text-white" />
+                <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Password"
+                    className="w-full bg-dark-card p-2 rounded text-white border-none outline-none"
+                    required
+                />
+                <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="text-gray-400 hover:text-white transition-colors"
+                >
+                    <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+                </button>
+            </div>
+            
+            <div className="flex items-center gap-2 bg-dark-card p-2 rounded text-white border border-card-border">
+                <FontAwesomeIcon icon={faKey} className="text-white" />
+                <input
+                    type={showConfirmPassword ? "text" : "password"}
+                    placeholder="Confirm Password"
+                    className="w-full bg-dark-card p-2 rounded text-white border-none outline-none"
+                    required
+                />
+                <button
+                    type="button"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                    className="text-gray-400 hover:text-white transition-colors"
+                >
+                    <FontAwesomeIcon icon={showConfirmPassword ? faEyeSlash : faEye} />
+                </button>
+            </div>
+        </div>
                             
                             <button
                                 type="submit"
