@@ -31,7 +31,7 @@ const SignUp = () => {
                                 <div className="flex items-center mt-3 gap-3 bg-dark-card p-3 rounded text-white border border-card-border">
                                     <FontAwesomeIcon icon={faUser} />
                                     <input type="text"
-                                    placeholder="Enter Your Name" 
+                                    placeholder="Enter Your Username" 
                                     
                                     required
                                     />

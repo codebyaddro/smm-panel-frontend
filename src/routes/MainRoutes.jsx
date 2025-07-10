@@ -8,6 +8,10 @@ import LogIn from "../auth/LogIn";
 import SignUp from "../auth/SignUp";
 import SingleProduct from "../pages/SingleProduct";
 import Orders from "../pages/Orders";
+import Diposit from "../pages/Deposit";
+import Deposit from "../pages/Deposit";
+import Tickets from "../pages/Tickets";
+import Services from "../pages/Services";
 
 
 
@@ -47,7 +51,19 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/Orders",
             element: <Orders/>
-         }
+         }, 
+         {
+            path: "/Deposit",
+            element: <Deposit/>
+         },
+         {
+            path: "/Tickets",
+            element: <Tickets/>
+         },
+         {
+            path: "/services",
+            element: <Services/>
+         },
     ]
 
     }]);
