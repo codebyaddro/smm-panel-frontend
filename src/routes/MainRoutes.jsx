@@ -7,6 +7,7 @@ import SMMPanel from "../pages/SMMPanel";
 import LogIn from "../auth/LogIn";
 import SignUp from "../auth/SignUp";
 import SingleProduct from "../pages/SingleProduct";
+import Orders from "../pages/Orders";
 
 
 
@@ -42,6 +43,10 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/SingleProduct",
             element: <SingleProduct />
+         },
+         {
+            path: "/Orders",
+            element: <Orders/>
          }
     ]
 

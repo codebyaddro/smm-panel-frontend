@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown, User, DollarSign, Bell, Grid3X3, LogOut } from 'lucide-react';
+import { Link } from 'react-router';
+import { NavLink } from 'react-router';
 
 export default function SmmHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,6 +16,7 @@ export default function SmmHeader() {
   };
 
   return (
+    
     <header className= "sticky top-0 z-50 bg-dark-bg text-white font-poppins py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -29,9 +32,18 @@ export default function SmmHeader() {
             <button className=" border border-card-border bg-dark-card hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 px-6 py-2 rounded-lg font-medium ">
               New order
             </button>
-            <button className="border border-card-border bg-dark-card hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-colors">
-              Orders
-            </button>
+            <NavLink 
+  to="/Orders" 
+  className={({ isActive }) => 
+    `border border-card-border px-4 py-2 rounded-lg transition-colors ${
+      isActive 
+        ? 'bg-gradient-to-r from-fuchsia-400 to-purple-700 text-white' 
+        : 'bg-dark-card hover:bg-gradient-to-r hover:from-fuchsia-400 hover:to-purple-700 text-gray-300 hover:text-white'
+    }`
+  }
+>
+  Orders
+</NavLink>
             <button className= "border border-card-border bg-dark-card hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-colors">
               Deposit
             </button>
@@ -133,9 +145,9 @@ export default function SmmHeader() {
             <button className="border bg-dark-card border-card-border hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 w-full text-left px-3 py-2 rounded-md text-base font-medium">
               New order
             </button>
-            <button className="border bg-dark-card border-card-border hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md text-base font-medium">
+            <NavLink to='/Orders' className="border bg-dark-card border-card-border hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md text-base font-medium">
               Orders
-            </button>
+            </NavLink>
             <button className="border bg-dark-card border-card-border hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md text-base font-medium">
               Deposit
             </button>
