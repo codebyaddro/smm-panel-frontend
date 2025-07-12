@@ -123,9 +123,7 @@ const Faqs = () => {
     setCurrentTestimonial((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
 
-  const primaryPurple = '#7B42F6'; // Picking a vibrant purple from the image
-  const lightPurple = '#E0CCFF'; // Lighter shade for background elements
-  const darkPurple = '#5A2EBA'; // Darker shade for text/accents
+  
   const gradientStart = '#7B42F6'; // Gradient start color
   const gradientEnd = '#B842F6'; // Gradient end color
 
@@ -184,8 +182,8 @@ const Faqs = () => {
       {/* Testimonial Section */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Here's what our customers say:</h2>
-          <div className="flex items-center space-x-2">
+          <h2 className="text-xl md:text-4xl font-bold text-gray-800">Here's what our customers say:</h2>
+          <div className="flex flex-col items-center space-x-2">
             <img src="https://placehold.co/24x24/000000/FFFFFF?text=T" alt="Trustpilot icon" className="w-6 h-6" />
             <span className="font-semibold text-gray-700">Trustpilot</span>
             <div className="flex">

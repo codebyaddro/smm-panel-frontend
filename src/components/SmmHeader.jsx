@@ -88,9 +88,15 @@ export default function SmmHeader() {
               }>
               Services
             </NavLink>
-            <button className="border border-card-border bg-dark-card hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 text-gray-300 hover:text-white px-4 py-2 rounded-lg transition-colors">
+            <NavLink to="/Dashboard" className={({ isActive }) =>
+                `border border-card-border px-4 py-2 rounded-lg transition-colors ${
+                  isActive
+                    ? "bg-gradient-to-r from-fuchsia-400 to-purple-700 text-white"
+                    : "bg-dark-card hover:bg-gradient-to-r hover:from-fuchsia-400 hover:to-purple-700 text-gray-300 hover:text-white"
+                }`
+              }>
               Dashboard
-            </button>
+            </NavLink>
             <div className="relative">
               <button
                 onClick={toggleShowMore}
@@ -135,10 +141,10 @@ export default function SmmHeader() {
               {/* User Dropdown Menu */}
               <div className="absolute right-0 mt-2 w-48 bg-dark-card rounded-lg shadow-lg border border-card-border z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                 <div className="py-2">
-                  <button className="flex items-center w-full text-left px-4 py-2 text-gray-300 hover:text-white hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 transition-colors">
+                  <NavLink to="/my-account" className="flex items-center w-full text-left px-4 py-2 text-gray-300 hover:text-white hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 transition-colors">
                     <User className="h-4 w-4 mr-3" />
                     My Account
-                  </button>
+                  </NavLink>
                   <button className="flex items-center w-full text-left px-4 py-2 text-gray-300 hover:text-white hover:bg-gradient-to-r from-fuchsia-400 to-purple-700 transition-colors">
                     <Bell className="h-4 w-4 mr-3" />
                     Notifications

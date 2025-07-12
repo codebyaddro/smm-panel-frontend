@@ -12,6 +12,8 @@ import Diposit from "../pages/Deposit";
 import Deposit from "../pages/Deposit";
 import Tickets from "../pages/Tickets";
 import Services from "../pages/Services";
+import Dashboard from "../pages/Dashboard";
+import MyAccount from "../pages/MyAccount";
 
 
 
@@ -63,6 +65,14 @@ const MainRoutes = createBrowserRouter([{
          {
             path: "/services",
             element: <Services/>
+         },
+         {
+            path: "/Dashboard",
+            element: <Dashboard/>
+         },
+         {
+            path: "/my-account",
+            element: <MyAccount/>
          },
     ]
 

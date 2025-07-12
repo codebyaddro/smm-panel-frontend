@@ -26,7 +26,7 @@ const LogIn = () => {
                              <FontAwesomeIcon icon={faAt}/>
                             <input
                                 type="email"
-                                placeholder="Email"
+                                placeholder="Email or Username"
                                 className="w-full bg-dark-card p-2 rounded text-white border-none"
                                 required
                             />

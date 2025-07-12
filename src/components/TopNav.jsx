@@ -1,14 +1,12 @@
-import { faFacebook, faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
- 
-  PhoneOutgoing,
-  Search,
-  ShoppingCart,
-  User,
-  User2,
-} from "lucide-react";
+import { PhoneOutgoing, Search, ShoppingCart, User, User2 } from "lucide-react";
 import { NavLink } from "react-router";
 import { Link } from "react-router";
 
@@ -19,11 +17,11 @@ const TopNav = () => {
         <nav>
           {/* hotline and social media section */}
           <section className="bg-gray-50 border-b-1 border-gray-200">
-            <div className="max-w-7xl mx-auto flex items-center justify-between p-2 ">
+            <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between p-2 gap-2">
               {/* hotline */}
-              <div className="flex items-center justify-start gap-2 ">
-                <PhoneOutgoing className="text-gray-800" />
-                <p className="text-md font-poppins text-gray-800">
+              <div className="flex items-center justify-start gap-2 order-2 sm:order-1">
+                <PhoneOutgoing className="text-gray-800 w-4 h-4" />
+                <p className="text-xs sm:text-sm lg:text-md font-poppins text-gray-800 text-center sm:text-left">
                   Hotline:{" "}
                   <span className="text-blue-700">
                     +88012345678, +880123456789
@@ -34,14 +32,14 @@ const TopNav = () => {
                 </p>
               </div>
               {/* social media */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 sm:gap-4 order-1 sm:order-2">
                 <a
                   href="https://www.facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:text-blue-800 border-r-1 border-gray-300 pr-2"
                 >
-                  <FontAwesomeIcon icon={faFacebook} />
+                  <FontAwesomeIcon icon={faFacebook} className="w-4 h-4" />
                 </a>
                 <a
                   href="https://www.twitter.com"
@@ -49,7 +47,7 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-600 border-r-1 border-gray-300 pr-2"
                 >
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faTwitter} className="w-4 h-4" />
                 </a>
                 <a
                   href="https://www.instagram.com"
@@ -57,7 +55,7 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-pink-600 hover:text-pink-800 border-r-1 border-gray-300 pr-2"
                 >
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={faInstagram} className="w-4 h-4" />
                 </a>
                 <a
                   href="https://www.linkedin.com"
@@ -65,108 +63,149 @@ const TopNav = () => {
                   rel="noopener noreferrer"
                   className="text-blue-700 hover:text-blue-900 border-r-1 border-gray-300 pr-2"
                 >
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faLinkedin} className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
-                  className="flex items-center justify-center text-gray-600 hover:text-blue-500"
+                  className="flex items-center justify-center text-gray-600 hover:text-blue-500 gap-1"
                 >
-                  <User />
-                  <NavLink to="/signup">LOGIN OR RESISTER</NavLink>
+                  <User className="w-4 h-4" />
+                  <NavLink
+                    to="/signup"
+                    className="text-xs sm:text-sm hidden sm:inline"
+                  >
+                    LOGIN OR REGISTER
+                  </NavLink>
+                  <NavLink to="/signup" className="text-xs sm:hidden">
+                    LOGIN
+                  </NavLink>
                 </a>
               </div>
             </div>
           </section>
-          {/* logo and search bar  */}
-          <section className="max-w-7xl mx-auto flex items-center justify-between">
-            <div className="flex items-center justify-between p-4">
-              <img
-                src="./images/Webssite.png"
-                alt="website logo"
-                className="w-44 h-16"
-              />
-            </div>
-            <div>
-              <form class=" flex items-center justify-center">
-                <select
-                  id="categoried"
-                  class="bg-gray-50  text-white text-md rounded-tl-lg rounded-bl-lg w-full p-2.5 dark:bg-gray-700 "
-                >
-                  <option selected>All Categories</option>
-                  <option value="Software">Software</option>
-                  <option value="Antivirus">Antivirus</option>
-                  <option value="Office">Office</option>
-                  <option value="Windows">Windows</option>
-                </select>
-                <div class="flex">
-                  <input
-                    type="search"
-                    id=""
-                    class=" lg:w-xl text-md  text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none placeholder:text-center"
-                    placeholder="Search for products, brands and more"
-                    required
-                  />
-                  <button
-                    type="submit"
-                    class="p-2.5  text-md  font-medium text-white bg-blue-700 rounded-tr-lg rounded-br-lg "
+
+          {/* logo and search bar section */}
+          <section className="max-w-7xl mx-auto px-4">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-4 py-4">
+              {/* logo */}
+              <div className="flex items-center justify-center lg:justify-start">
+                <img
+                  src="./images/Webssite.png"
+                  alt="website logo"
+                  className="w-32 h-12 sm:w-40 sm:h-14 lg:w-44 lg:h-16"
+                />
+              </div>
+
+              {/* search bar */}
+              <div className="w-full lg:w-auto lg:flex-1 lg:max-w-2xl lg:mx-8">
+                <form className="flex items-center justify-center w-full">
+                  <select
+                    id="categoried"
+                    className="bg-gray-50 text-gray-900 text-sm rounded-tl-lg rounded-bl-lg w-24 sm:w-32 lg:w-40 p-2.5 dark:bg-gray-700 dark:text-white border-r-0"
                   >
-                    <FontAwesomeIcon icon={faSearch} />
-                  </button>
+                    <option selected>All Categories</option>
+                    <option value="Software">Software</option>
+                    <option value="Antivirus">Antivirus</option>
+                    <option value="Office">Office</option>
+                    <option value="Windows">Windows</option>
+                  </select>
+                  <div className="flex flex-1">
+                    <input
+                      type="search"
+                      id="search-input"
+                      className="w-full text-sm text-gray-900 bg-gray-50 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent px-3 py-2.5 placeholder:text-center sm:placeholder:text-left"
+                      placeholder="Search for products, brands and more"
+                      required
+                    />
+                    <button
+                      type="submit"
+                      className="p-2.5 text-sm font-medium text-white bg-blue-700 rounded-tr-lg rounded-br-lg hover:bg-blue-800 transition-colors"
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+              {/* shopping cart */}
+              <div className="flex items-center justify-center gap-3 font-poppins">
+                <User2 className="w-5 h-5 text-gray-600" />
+                <ShoppingCart className="w-5 h-5 text-gray-600" />
+                <div className="hidden sm:block">
+                  <p className="text-sm">Shopping Cart</p>
+                  <p className="text-red-600 text-sm font-medium">$00.00</p>
                 </div>
-              </form>
-            </div>
-            <div className="flex items-center justify-center p-4 gap-3 font-poppins">
-              <User2 />
-              <ShoppingCart />
-              <div>
-                <p>Shopping Cart</p>
-                <p className="text-red-600">$00.00</p>
               </div>
             </div>
           </section>
-          {/* navlinks */}
+
+          {/* navigation links */}
           <section className="bg-blue-900">
-            <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 text-white font-poppins ">
-              <ul className="flex items-center gap-6 text-md px">
-                <li className="hover:text-blue-200">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="hover:text-blue-100">
-                  <Link to="/AllProducts">All Products</Link>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">Windows</a>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">Office</a>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">Software</a>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">Windows Server</a>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">Subscription</a>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">Antivirus</a>
-                </li>
-                <li className="hover:text-blue-100">
-                  <a href="#">VPN</a>
-                </li>
-              </ul>
-              <div>
-                <ul>
-                  <li>
-                    <NavLink
-                      to="/SMMPanel"
-                      className="bg-gradient-to-r from-fuchsia-600 to-violet-500 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors"
-                    >
+            <div className="max-w-7xl mx-auto px-4 py-3 text-white font-poppins">
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
+                {/* main navigation - horizontal scroll on mobile */}
+                <div className="w-full lg:w-auto overflow-x-auto">
+                  <ul className="flex items-center gap-4 lg:gap-6 text-sm lg:text-md whitespace-nowrap min-w-max lg:min-w-0">
+                    <li className="hover:text-blue-200 transition-colors">
+                      <Link to="/" className="block py-2">
+                        Home
+                      </Link>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <Link to="/AllProducts" className="block py-2">
+                        All Products
+                      </Link>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        Windows
+                      </a>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        Office
+                      </a>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        Software
+                      </a>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        Windows Server
+                      </a>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        Subscription
+                      </a>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        Antivirus
+                      </a>
+                    </li>
+                    <li className="hover:text-blue-100 transition-colors">
+                      <a href="#" className="block py-2">
+                        VPN
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* SMM Panel button */}
+                <div className="w-full lg:w-auto">
+                  <NavLink
+                    to="/SMMPanel"
+                    className="block w-full lg:w-auto text-center bg-gradient-to-r from-fuchsia-600 to-violet-500 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm lg:text-base"
+                  >
+                    <span className="hidden sm:inline">
                       Log in to SMM Panel
-                    </NavLink>
-                  </li>
-                </ul>
+                    </span>
+                    <span className="sm:hidden">SMM Panel</span>
+                  </NavLink>
+                </div>
               </div>
             </div>
           </section>

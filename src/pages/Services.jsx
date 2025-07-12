@@ -29,7 +29,8 @@ const Services = () => {
   return (
     <div>
         <SmmHeader />
-        <div className="min-h-screen bg-[#0f0b1d] text-white p-6">
+        <div className='bg-main-bg'>
+          <div className="min-h-screen max-w-7xl mx-auto bg-[#0f0b1d] text-white p-6">
       {/* Search and Filter */}
       <div className="flex flex-col md:flex-row gap-3 md:items-center mb-4">
         <div className="flex-1 relative">
@@ -106,7 +107,8 @@ const Services = () => {
           </tbody>
         </table>
       </div>
-    </div>
+        </div>
+        </div>
     </div>
   );
 };
