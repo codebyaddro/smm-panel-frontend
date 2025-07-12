@@ -24,7 +24,7 @@ const SMMPanel = () => {
           <div className="col-span-2 bg-dark-bg font-poppins p-5 rounded-xl border border-card-border">
             <h2 className="text-txt-pink text-2xl font-bold">
               Welcome to Grow Authentic
-            </h2>
+            </h2>a
             <p className="text-white text-lg">
               Grow Bigger, They Follow Quicker!
             </p>
@@ -119,19 +119,19 @@ const SMMPanel = () => {
           <ul className="flex items-center justify-between text-white py-4 px-6">
             <li>
               <a href="#">
-                <FontAwesomeIcon icon={faInstagram}  className="text-4xl hover:text-txt-pink"/>
+                <FontAwesomeIcon icon={faInstagram}  className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/>
               </a>
             </li>
-            <li><a href="#"><FontAwesomeIcon icon={faFacebook}  className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faYoutube} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faTiktok} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faTelegram} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faXTwitter} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faSpotify} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faSoundcloud} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faGlobe} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} className="text-4xl hover:text-txt-pink"/></a></li>
-            <li><a href="#"><FontAwesomeIcon icon={faFilm} className="text-4xl hover:text-txt-pink"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faFacebook}  className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out `"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faYoutube} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faTiktok} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faTelegram} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faXTwitter} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faSpotify} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faSoundcloud} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faGlobe} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
+            <li><a href="#"><FontAwesomeIcon icon={faFilm} className="text-4xl hover:scale-125 duration-300 delay-75 ease-in-out"/></a></li>
           </ul>
         </div>
       </section>

@@ -37,8 +37,8 @@ const OrderPanel = () => {
           {/* Order Form */}
           <div className="space-y-4">
             <div>
-              <label className="text-sm text-gray-400 block mb-1">Category</label>
-              <select className="w-full bg-dark-card p-2 rounded text-white border-none">
+              <label className="text-sm text-gray-400 block mb-1 ">Category</label>
+              <select className="w-full bg-dark-card p-2 rounded text-white border-none focus:outline-none">
                 <option>Facebook - Video/Reel Views/Plays</option>
               </select>
             </div>
