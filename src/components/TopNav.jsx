@@ -85,8 +85,8 @@ const TopNav = () => {
           </section>
 
           {/* logo and search bar section */}
-          <section className="max-w-7xl mx-auto px-4">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-4 py-4">
+          <section className="max-w-7xl mx-auto ">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
               {/* logo */}
               <div className="flex items-center justify-center lg:justify-start">
                 <img
@@ -119,7 +119,7 @@ const TopNav = () => {
                     />
                     <button
                       type="submit"
-                      className="p-2.5 text-sm font-medium text-white bg-blue-700 rounded-tr-lg rounded-br-lg hover:bg-blue-800 transition-colors"
+                      className="p-2.5 text-sm font-medium text-white bg-blue-800 rounded-tr-lg rounded-br-lg hover:bg-blue-800 transition-colors"
                     >
                       <FontAwesomeIcon icon={faSearch} />
                     </button>
@@ -147,14 +147,28 @@ const TopNav = () => {
                 <div className="w-full lg:w-auto overflow-x-auto">
                   <ul className="flex items-center gap-4 lg:gap-6 text-sm lg:text-md whitespace-nowrap min-w-max lg:min-w-0">
                     <li className="hover:text-blue-200 transition-colors">
-                      <Link to="/" className="block py-2">
+                      <NavLink to="/" className={({ isActive }) =>
+                ` px-4 py-2 rounded-lg transition-colors ${
+                  isActive
+                    ? "bg-gradient-to-r from-fuchsia-400 to-purple-700 text-white"
+                    : "b"
+                }`
+              }
+            >
                         Home
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="hover:text-blue-100 transition-colors">
-                      <Link to="/AllProducts" className="block py-2">
+                      <NavLink to="/AllProducts" className={({ isActive }) =>
+                `px-4 py-2 rounded-lg transition-colors ${
+                  isActive
+                    ? "bg-gradient-to-r from-fuchsia-400 to-purple-700 text-white"
+                    : " "
+                }`
+              }
+            >
                         All Products
-                      </Link>
+                      </NavLink>
                     </li>
                     <li className="hover:text-blue-100 transition-colors">
                       <a href="#" className="block py-2">

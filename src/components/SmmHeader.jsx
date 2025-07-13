@@ -31,7 +31,7 @@ export default function SmmHeader() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <div className="text-2xl font-bold">
-              <img className="w-42 h-16" src="./images/Webssite.png" alt="" />
+              <img className="w-42 h-16" src="./images/Website-White.png" alt="" />
             </div>
           </div>
 
