@@ -4,8 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMM Login Page | CodeByAddro</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <!-- icon -->
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <!-- navbar start -->
+    <nav>
+        <div class="nav-content">
+            <div class="nav-logo-menus">
+                <div class="nav-logo">
+                    <h1>Libgram</h1>
+                </div>
+                <div class="nav-menus">
+                    <ul id="mobileMenu">
+                        <li>
+                            Instagram
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            Youtube
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            TikTok
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            Telegram
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            Twitter
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            <i class='bx  bx-dots-horizontal-rounded'></i> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <div class="login-btn">
+                    <button>
+                        Login
+                        <i class='bx  bx-arrow-in-right-square-half'></i> 
+                    </button>
+                </div>
+            </div>
+            <div class="nav-hamburger" onclick="toggleMenu()">
+                <i class='bx  bx-menu'></i> 
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- main -->
+    <main>
+        <div class="main-content">
+            <form>
+                <div class="form-title">
+                    <h2>Welcome back 👋</h2>
+                    <p>Please enter your detailse.</p>
+                </div>
+                <div class="google-login">
+                    <img src="../assets/images/google-logo.png" alt="Google logo">
+                    <h3>Log in with google</h3>
+                </div>
+                <div class="divider">
+                    <span></span>
+                    <p>or</p>
+                    <span></span>
+                </div>
+                <div class="inputs">
+                    <div class="input">
+                        <i class='bx  bx-at'></i>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input">
+                        <i class='bx  bx-lock'></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="remember-forgot">
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password</a>
+                    </div>
+                </div>
+                <div class="login-btn">
+                    <button type="submit">Log in</button>
+                </div>
+                <div class="register-option">
+                    <p>Don’t have in account? <a href="">Sing up for free</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="brand-logo">
+                    <img src="../assets/images/brand-logo.png" alt="Brand Logo">
+                </div>
+                <div class="footer-menus">
+                    <ul>
+                        <li>
+                            <a href="">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <img src="../assets/images/us-flag.svg" alt="us flag">
+                            English
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p><span id="copyrightyear"></span> | All Rights Reserved</p>
+                </div>
+                <div class="payment-gateways">
+                    <div>
+                        <img src="../assets/images/payment-gateway-1.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-2.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-3.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-4.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-5.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-6.png" alt="Payment gateway logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- js -->
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/footer.js"></script>
 </body>
 </html>

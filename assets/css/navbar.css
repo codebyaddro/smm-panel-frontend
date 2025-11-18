@@ -29,6 +29,8 @@ ul {
     list-style-type: none;
 }
 
+/* ------------------------------------ */
+
 /* navbar design start */
 nav {
     width: 100%;
@@ -55,6 +57,7 @@ nav > .nav-content > .nav-logo-menus {
 nav > .nav-content > .nav-logo-menus > .nav-logo > h1 {
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* nav menus */
