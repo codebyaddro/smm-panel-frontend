@@ -4,10 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMM Panel Built with HTML CSS JavaScript | CodeByAddro</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- icon -->
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        Hello
+        <!-- navbar start -->
+        <nav>
+            <div class="nav-content">
+                <div class="nav-logo-menus">
+                    <div class="nav-logo">
+                        <h1>
+                            <a href="/index.html">Libgram</a>
+                        </h1>
+                    </div>
+                    <div class="nav-menus">
+                        <ul id="mobileMenu">
+                            <li>
+                                Instagram
+                                <i class='bx  bx-chevron-down'></i> 
+                            </li>
+                            <li>
+                                Youtube
+                                <i class='bx  bx-chevron-down'></i> 
+                            </li>
+                            <li>
+                                TikTok
+                                <i class='bx  bx-chevron-down'></i> 
+                            </li>
+                            <li>
+                                Telegram
+                                <i class='bx  bx-chevron-down'></i> 
+                            </li>
+                            <li>
+                                Twitter
+                                <i class='bx  bx-chevron-down'></i> 
+                            </li>
+                            <li>
+                                <i class='bx  bx-dots-horizontal-rounded'></i> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-buttons">
+                    <div class="login-btn">
+                        <button id="logout-button">
+                            Logout
+                            <i class='bx bx-arrow-out-right-square-half'></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="nav-hamburger" onclick="toggleMenu()">
+                    <i class='bx  bx-menu'></i> 
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- hero start -->
+        <div class="hero"></div>
     </header>
+
+    <!-- js -->
+    <script>
+        if (localStorage.getItem("auth") !== "true") {
+            window.location.href = "/pages/login.html";
+        }
+    </script>
+    <script defer src="./assets/js/navbar.js"></script>
+    <script defer src="./assets/js/login.js"></script>
+    <script defer src="./assets/js/footer.js"></script>
 </body>
 </html>

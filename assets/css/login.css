@@ -332,7 +332,7 @@ main > .main-content > form > .remember-forgot > .remember > label {
     font-size: 14px;
 }
 
-main > .main-content > form > .remember-forgot > .forgot > a {
+main > .main-content > form > .remember-forgot > .forgot > span {
     font-size: 14px;
     text-decoration: underline;
 }
