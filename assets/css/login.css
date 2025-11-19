@@ -29,6 +29,11 @@ ul {
     list-style-type: none;
 }
 
+::selection {
+    background-color: #FF645B;
+    color: #F8FAFC;
+}
+
 /* ------------------------------------ */
 
 /* navbar design start */
@@ -353,12 +358,12 @@ main > .main-content > form > .register-option > p {
     color: #434D56;
 }
 
-main > .main-content > form > .register-option > p > a {
+main > .main-content > form > .register-option > p > span {
     color: black;
     margin-left: 10px;
 }
 
-main > .main-content > form > .register-option > p > a:hover {
+main > .main-content > form > .register-option > p > span:hover {
     text-decoration: underline;
 }
 
@@ -403,20 +408,63 @@ main > .modal-container {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.5);
-    /* display: none; */
+    display: none;
 }
 
-.modal {
+main > .modal-container > .modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: white;
-    padding: 20px 25px;
+    width: 350px;
+    padding: 40px;
     border-radius: 10px;
-    width: 300px;
-    /* display: none; */
+    display: none;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+main > .modal-container > .modal > h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+main > .modal-container > .modal > ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+main > .modal-container > .modal > ul > li {
+    background-color: #B8ECFD;
+    color: #434D56;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+main > .modal-container > .modal > button {
+    width: 100%;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    background-color: #FF645B;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 0px;
+    margin: 12px 0px 18px;
+    cursor: pointer;
+}
+
+main > .modal-container > .modal > span {
+    background-color: #F2FBFE;
+    color: #434D56;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify!important;
 }
 
 /* main design end */

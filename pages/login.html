@@ -100,19 +100,20 @@
                     <button type="submit">Log in</button>
                 </div>
                 <div class="register-option">
-                    <p>Don’t have in account? <a href="">Sing up for free</a></p>
+                    <p>Don’t have in account? <span onclick="openModal()">Sing up for free</span></p>
                 </div>
             </form>
         </div>
         <!-- login details modal -->
-        <div class="modal-container">
-            <div class="modal">
+        <div class="modal-container" id="modal-box">
+            <div class="modal" id="modal">
                 <h2>Login with this details</h2>
                 <ul>
                     <li>Email: admin@mail.com</li>
                     <li>Password: admin@321</li>
                 </ul>
-                <button>Close</button>
+                <button onclick="closeModal()">Close</button>
+                <span>*Note : Backend not ready yet, so login with manual information</span>
             </div>
         </div>
     </main>

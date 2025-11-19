@@ -1,15 +1,15 @@
-function registerUser(e) {
-    e.preventDefault();
+// modal function
+const modalBox = document.getElementById('modal-box');
+const mainModal = document.getElementById('modal');
 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-
-    document.getElementById("showUser").textContent = username;
-    document.getElementById("showPass").textContent = password;
-
-    document.getElementById("detailsModal").style.display = "flex";
+function openModal() {
+    modalBox.style.display = 'block';
+    mainModal.style.display = 'block';
 }
 
 function closeModal() {
-    document.getElementById("detailsModal").style.display = "none";
+    modalBox.style.display = 'none';
+    mainModal.style.display = 'none';
 }
+
+// login function

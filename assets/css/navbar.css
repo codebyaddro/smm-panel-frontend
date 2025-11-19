@@ -29,6 +29,11 @@ ul {
     list-style-type: none;
 }
 
+::selection {
+    background-color: #FF645B;
+    color: #F8FAFC;
+}
+
 /* ------------------------------------ */
 
 /* navbar design start */
