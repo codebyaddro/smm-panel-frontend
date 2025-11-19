@@ -10,9 +10,14 @@
     <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+    <header id="header">
         <!-- navbar start -->
-        <nav>
+        <nav id="nav">
             <div class="nav-content">
                 <div class="nav-logo-menus">
                     <div class="nav-logo">
@@ -68,13 +73,14 @@
     </header>
 
     <!-- js -->
+    <script src="./assets/js/loader.js"></script>
     <script>
         if (localStorage.getItem("auth") !== "true") {
             window.location.href = "/pages/login.html";
         }
     </script>
     <script defer src="./assets/js/navbar.js"></script>
-    <script defer src="./assets/js/login.js"></script>
+    <script defer src="./assets/js/auth.js"></script>
     <script defer src="./assets/js/footer.js"></script>
 </body>
 </html>

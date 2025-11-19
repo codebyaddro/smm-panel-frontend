@@ -10,8 +10,13 @@
     <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
     <!-- navbar start -->
-    <nav>
+    <nav id="nav">
         <div class="nav-content">
             <div class="nav-logo-menus">
                 <div class="nav-logo">
@@ -63,7 +68,7 @@
     <!-- navbar end -->
 
     <!-- main -->
-    <main>
+    <main id="main">
         <div class="main-content">
             <form>
                 <div class="form-title">
@@ -122,7 +127,7 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <footer>
+    <footer id="footer">
         <div class="footer-content">
             <div class="footer-top">
                 <div class="brand-logo">
@@ -176,8 +181,9 @@
     <!-- footer end -->
 
     <!-- js -->
+    <script defer src="../assets/js/loader.js"></script>
     <script defer src="../assets/js/navbar.js"></script>
-    <script defer src="../assets/js/login.js"></script>
+    <script defer src="../assets/js/auth.js"></script>
     <script defer src="../assets/js/footer.js"></script>
 </body>
 </html>
