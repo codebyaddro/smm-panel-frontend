@@ -131,7 +131,7 @@ nav > .nav-content > .nav-logo-menus > .nav-menus > ul > li > i {
 }
 
 /* Buttons */
-nav > .nav-content > .nav-buttons > .login-btn > button {
+nav > .nav-content > .nav-buttons > .logout-btn > button {
     display: flex;
     gap: 10px;
     align-items: center;
