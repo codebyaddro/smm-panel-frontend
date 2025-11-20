@@ -255,11 +255,11 @@ main > .main-content > form > .form-title {
 
 main > .main-content > form > .form-title > h2 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 main > .main-content > form > .form-title > p {
-    font-size: 16px;
+    font-size: 15px;
     color: #434D56;
 }
 
@@ -286,9 +286,8 @@ main > .main-content > form > .inputs > .input:has(input:focus) {
     border: 2px solid #FF645B;
 }
 
-main > .main-content > form > .inputs > .input > i {
-    font-size: 22px;
-    color: #434D56;
+main > .main-content > form > .inputs > .input:has(select:focus) {
+    border: 2px solid #FF645B;
 }
 
 main > .main-content > form > .inputs > .input > input {
@@ -297,6 +296,35 @@ main > .main-content > form > .inputs > .input > input {
 }
 
 main > .main-content > form > .inputs > .input > input::placeholder {
+    font-size: 14px;
+    color: #A6B8C6;
+}
+
+main > .main-content > form > .inputs > .input > select {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #A6B8C6;
+}
+
+main > .main-content > form > .inputs > .input > select > option {
+    background-color: #F2F6F9;
+    border: none;
+    font-size: 14px;
+}
+
+main > .main-content > form > .inputs > .input > textarea {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    color: #A6B8C6;
+    resize: vertical;
+    padding: 0px 0px 10px;
+}
+
+main > .main-content > form > .inputs > .input > textarea::placeholder {
     font-size: 14px;
     color: #A6B8C6;
 }
