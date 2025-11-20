@@ -238,21 +238,51 @@ main > .main-content {
     align-items: center;
 }
 
-/* 404 image design */
-main > .main-content > .page-not-found-image {
-    width: 512px;
+/* terms page design */
+main > .main-content > .terms-container {
+    width: 636px;
 }
 
-main > .main-content > .page-not-found-image > img {
-    width: 100%;
+main > .main-content > .terms-container > .terms-title > h2 {
+    font-size: 42px;
+    padding: 12px 0px 48px;
 }
 
+main > .main-content > .terms-container > .terms-text-box > .terms-subtitle > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 0px;
+}
+
+main > .main-content > .terms-container > .terms-text-box > .terms-paragraph > p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+main > .main-content > .terms-container > .terms-text-box > .terms-ol-list > ol {
+    list-style: decimal;
+    padding-left: 20px;
+    padding-bottom: 24px;
+}
+
+main > .main-content > .terms-container > .terms-text-box > .terms-ul-list > ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    padding-bottom: 24px;
+}
 
 /* main responsive design */
 @media (max-width: 768px) {
     main > .main-content {
         width: 100%;
         padding: 150px 24px 75px;
+    }
+
+    main > .main-content > .terms-container > .terms-title > h2 {
+        font-size: 32px;
+        padding: 0px 0px 32px;
     }
 }
 
