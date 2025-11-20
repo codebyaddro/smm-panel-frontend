@@ -54,9 +54,9 @@
             </div>
             <div class="nav-buttons">
                 <div class="login-btn">
-                    <button id="login-button">
-                        Login
-                        <i class='bx bx-arrow-in-right-square-half'></i>
+                    <button id="logout-button">
+                        Logout
+                        <i class='bx bx-arrow-out-right-square-half'></i>
                     </button>
                 </div>
             </div>
@@ -149,6 +149,11 @@
 
     <!-- js -->
     <script defer src="../assets/js/loader.js"></script>
+    <script>
+        if (localStorage.getItem("auth") !== "true") {
+            window.location.href = "/pages/login.html";
+        }
+    </script>
     <script defer src="../assets/js/navbar.js"></script>
     <script defer src="../assets/js/auth.js"></script>
     <script defer src="../assets/js/footer.js"></script>
