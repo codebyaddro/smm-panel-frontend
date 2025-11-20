@@ -18,8 +18,8 @@ function closeModal() {
     mainModal.style.display = "none";
 }
 
-const ADMIN_EMAIL = "admin";
-const ADMIN_PASSWORD = "123";
+const ADMIN_EMAIL = "admin@mail.com";
+const ADMIN_PASSWORD = "admin321";
 
 // Handle Login Submit
 if (submitBtn) {
