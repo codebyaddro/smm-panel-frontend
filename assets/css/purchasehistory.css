@@ -360,6 +360,7 @@ main > .main-content > .purchase-filter > div > div > select {
     font-size: 16px;
     font-weight: 500;
     color: #434D56;
+    background-color: transparent;
 }
 
 main > .main-content > .purchase-filter > div > div > select > option {
