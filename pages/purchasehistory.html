@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMM Purchase History | CodeByAddro</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/purchasehistory.css">
+    <!-- icon -->
+    <link href='https://cdn.boxicons.com/3.0.3/fonts/basic/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- loader -->
+    <!-- <div id="loader">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div> -->
+    <!-- navbar start -->
+    <nav id="nav">
+        <div class="nav-content">
+            <div class="nav-logo-menus">
+                <div class="nav-logo">
+                    <h1>
+                        <a href="/index.html">Libgram</a>
+                    </h1>
+                </div>
+                <div class="nav-menus">
+                    <ul id="mobileMenu">
+                        <li>
+                            Instagram
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            Youtube
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            TikTok
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            Telegram
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            Twitter
+                            <i class='bx  bx-chevron-down'></i> 
+                        </li>
+                        <li>
+                            <i class='bx  bx-dots-horizontal-rounded'></i> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <div class="profile-img">
+                    <span>
+                        <a href="../pages/purchasehistory.html">G</a>
+                    </span>
+                </div>
+                <div class="logout-btn">
+                    <button id="logout-button">
+                        Logout
+                        <i class='bx bx-arrow-out-right-square-half'></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-hamburger" onclick="toggleMenu()">
+                <i class='bx  bx-menu'></i> 
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- main start -->
+    <main>
+        <div class="main-content">
+            <div class="purchase-top">
+                <div class="page-title">
+                    <h2>Purchase History</h2>
+                </div>
+                <div class="page-searchbox-filtericon">
+                    <div class="page-searchbox">
+                        <input type="text" placeholder="Search">
+                        <i class='bxr bx-search'></i> 
+                    </div>
+                    <div class="page-filtericon" onclick="showFilter()">
+                        <i class='bxr  bx-filter'></i> 
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-filter" id="purchase-filter">
+                <div>
+                    <div>
+                        <select>
+                            <option value="">All Social Media</option>
+                            <option value="">FaceBook</option>
+                            <option value="">Instagram</option>
+                            <option value="">Youtube</option>
+                            <option value="">TikTok</option>
+                            <option value="">Telegram</option>
+                            <option value="">Twitter</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select>
+                            <option value="">Status</option>
+                            <option value="">Performed</option>
+                            <option value="">Processing</option>
+                            <option value="">Error</option>
+                        </select>
+                    </div>
+                    <button>Filter</button>
+                </div>
+            </div>
+            <div class="purchase-details">
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>PRODUCTS</th>
+                                <th>DATE</th>
+                                <th>PAYMENT</th>
+                                <th>QUANTITY</th>
+                                <th>ORDER ID</th>
+                                <th>STATUS</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class='bx bxs-heart'></i> Instagram Likes</td>
+                                <td>20.10.22 in 22:41 PM</td>
+                                <td>$7.99 USD</td>
+                                <td>1000 likes</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge success">Performed</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bx-eye'></i> Youtube Views</td>
+                                <td>16.10.22 in 16:55 PM</td>
+                                <td>$8.99 USD</td>
+                                <td>5000 views</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge success">Performed</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bx-tv-alt'></i> Instagram IGTV Views</td>
+                                <td>13.10.22 in 10:11 AM</td>
+                                <td>$17.99 USD</td>
+                                <td>2500 IGTV Views</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge success">Performed</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bxs-user-plus'></i> Instagram Followers</td>
+                                <td>10.10.22 in 18:34 PM</td>
+                                <td>$12.99 USD</td>
+                                <td>250 followers</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge processing">Processing</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bxs-heart'></i> Instagram Likes</td>
+                                <td>26.09.22 in 14:53 PM</td>
+                                <td>$7.99 USD</td>
+                                <td>1000 likes</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge success">Performed</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bx-eye'></i> Youtube Views</td>
+                                <td>24.09.22 in 11:12 AM</td>
+                                <td>$7.99 USD</td>
+                                <td>1000 views</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge error">Error</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bxs-heart'></i> Instagram Likes</td>
+                                <td>15.09.22 in 17:28 PM</td>
+                                <td>$7.99 USD</td>
+                                <td>1000 likes</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge success">Performed</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class='bx bxs-heart'></i> Instagram Likes</td>
+                                <td>02.09.22 in 12:03 PM</td>
+                                <td>$7.99 USD</td>
+                                <td>1000 likes</td>
+                                <td>HMjfSqDNX22... <i class='bxr bx-copy'></i> </td>
+                                <td><span class="badge success">Performed</span></td>
+                                <td><i class='bxr bx-dots-vertical-rounded'></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="load-more">Load more</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="brand-logo">
+                    <img src="../assets/images/brand-logo.png" alt="Brand Logo">
+                </div>
+                <div class="footer-menus">
+                    <ul>
+                        <li>
+                            <a href="">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <img src="../assets/images/us-flag.svg" alt="us flag">
+                            English
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p><span id="copyrightyear"></span> | All Rights Reserved</p>
+                </div>
+                <div class="payment-gateways">
+                    <div>
+                        <img src="../assets/images/payment-gateway-1.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-2.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-3.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-4.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-5.png" alt="Payment gateway logo">
+                    </div>
+                    <div>
+                        <img src="../assets/images/payment-gateway-6.png" alt="Payment gateway logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="../assets/js/loader.js"></script>
+    <script>
+        if (localStorage.getItem("auth") !== "true") {
+            window.location.href = "/pages/login.html";
+        }
+    </script>
+    <script defer src="../assets/js/navbar.js"></script>
+    <script defer src="../assets/js/purchasefilter.js"></script>
+    <script defer src="../assets/js/auth.js"></script>
+    <script defer src="../assets/js/footer.js"></script>
+</body>
+</html>
